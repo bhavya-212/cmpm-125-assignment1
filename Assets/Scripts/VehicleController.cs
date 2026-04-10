@@ -1,15 +1,18 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEngine.GraphicsBuffer;
 
 public class VehicleController : MonoBehaviour
 {
     public float desired_acceleration;
     public float power;
-
+    public CheckpointController next;
+    public CheckpointController target;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        target.left.materials[0].color = Color.red;
+        target.right.materials[0].color = Color.red;
     }
 
     // Update is called once per frame
