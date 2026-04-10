@@ -12,6 +12,8 @@ public class VehicleController : MonoBehaviour
     public CheckpointController next;
     public CheckpointController target;
     public float start_time;
+    public int lap_count = 0;
+    public bool start_lap = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,12 +31,24 @@ public class VehicleController : MonoBehaviour
         {
             transform.Rotate(0, dx, 0);
         }
-        time_label.text = (Time.time - start_time).ToString() + " seconds";
+        time_label.text = "Lap: " + lap_count + "\nTime: " + (Time.time - start_time).ToString("F2") + "s";
     }
 
     void OnMove(InputValue value)
     {
         Vector2 movement = value.Get<Vector2>();
         desired_acceleration = movement.y;
+    }
+
+    public void OnLapComplete()
+    {
+        if (!start_lap)
+        {
+            start_lap = true;
+            return;
+        }
+        lap_count++;
+        Debug.Log("Lap: " + lap_count);
+        start_time = Time.time;
     }
 }

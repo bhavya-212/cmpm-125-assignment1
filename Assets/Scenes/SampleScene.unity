@@ -154,6 +154,7 @@ MonoBehaviour:
   next: {fileID: 1029054292}
   left: {fileID: 1983319172}
   right: {fileID: 1881580810}
+  first_checkpoint: 0
 --- !u!65 &91718393
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -284,6 +285,7 @@ MonoBehaviour:
   next: {fileID: 134042413}
   left: {fileID: 735423904}
   right: {fileID: 1792117663}
+  first_checkpoint: 0
 --- !u!65 &123260010
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -414,6 +416,7 @@ MonoBehaviour:
   next: {fileID: 1859687693}
   left: {fileID: 1369787759}
   right: {fileID: 1139820216}
+  first_checkpoint: 0
 --- !u!65 &134042414
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1704,6 +1707,7 @@ MonoBehaviour:
   next: {fileID: 1348492199}
   left: {fileID: 505932529}
   right: {fileID: 723762724}
+  first_checkpoint: 1
 --- !u!1 &1139820213
 GameObject:
   m_ObjectHideFlags: 0
@@ -1888,6 +1892,7 @@ MonoBehaviour:
   next: {fileID: 123260009}
   left: {fileID: 2003894941}
   right: {fileID: 286979665}
+  first_checkpoint: 0
 --- !u!65 &1348492200
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2501,6 +2506,8 @@ MonoBehaviour:
   next: {fileID: 1348492199}
   target: {fileID: 1029054292}
   start_time: 0
+  lap_count: 0
+  start_lap: 0
 --- !u!1 &1792117660
 GameObject:
   m_ObjectHideFlags: 0
@@ -2648,6 +2655,7 @@ MonoBehaviour:
   next: {fileID: 91718392}
   left: {fileID: 306858851}
   right: {fileID: 1459737117}
+  first_checkpoint: 0
 --- !u!65 &1859687694
 BoxCollider:
   m_ObjectHideFlags: 0
